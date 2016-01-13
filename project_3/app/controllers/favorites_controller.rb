@@ -19,8 +19,8 @@ class FavoritesController < ApplicationController
   def destroy
   	result = Favorite.destroy params[:id]
     respond_to do |format|
-    format.html {redirect_to :favorites}
     format.json {render json: result}
+    format.html {redirect_to :favorites}
 	end
   end
 
