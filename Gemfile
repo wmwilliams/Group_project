@@ -31,6 +31,8 @@ gem 'bootstrap_form'
 
 gem 'rest-client'
 
+gem 'open-uri'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
