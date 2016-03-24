@@ -103,7 +103,7 @@ class DrinksController < ApplicationController
       flash[:warning] = "Please enter a drink"
       redirect_to '/'
     else
-  	base_url = 'http://addb.absolutdrinks.com/quickSearch/drinks/' + params[:srch_term]
+  	base_url = 'http://addb.absolutdrinks.com/quickSearch/drinks/' + URI::encode(params[:srch_term])
 
 	  	response = RestClient.get base_url, {
 	  		:params => {
